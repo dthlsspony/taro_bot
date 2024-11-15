@@ -439,13 +439,14 @@
         const question = urlParams.get('question') ?? (new Date).toDateString();
         
         let id = localStorage.getItem('lsid');
-        if (!id) {
-            id = MurmurHash3('' + Math.random());
-            localStorage.setItem('lsid', id);
-        }
 
         let generate_seed = MurmurHash3(id + question);
         let random_number = Mulberry32(generate_seed());
+
+        if (!id) {
+            id = generate_seed();
+            localStorage.setItem('lsid', id);
+        }
 
         let hashedCards = cards.map(card => {
             card.sort = random_number();

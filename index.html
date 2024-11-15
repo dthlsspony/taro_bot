@@ -12,326 +12,402 @@
     </form>
     <div id="answer">
     </div>
+    <a href="list.txt" target="_blank">Подсказка</a>
     <script>
         let cards = [
             {
                 title: 'Шут',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Маг',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Жрица',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Императрица',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Император',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Иерофант',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Влюбленные',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Колесница',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Сила',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Отшельник',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Колесо фортуны',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Справедливость',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Повешенный',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Смерть',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Умеренность',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Дьявол',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Башня',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Звезда',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Луна',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Солнце',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Страшный суд',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Мир',
-                sort: 0
+                sort: 0,
+                reversed: false
             },      
             {
                 title: 'Туз Жезлов',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Двойка Жезлов',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Тройка Жезлов',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Четверка Жезлов',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Пятерка Жезлов',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Шестёрка Жезлов',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Семерка Жезлов',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Восьмерка Жезлов',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Девятка Жезлов',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Десятка Жезлов',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Паж Жезлов',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Рыцарь Жезлов',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Королева Жезлов',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Король Жезлов',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Туз Мечей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Двойка Мечей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Тройка Мечей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Четверка Мечей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Пятерка Мечей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Шестёрка Мечей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Семерка Мечей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Восьмерка Мечей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Девятка Мечей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Десятка Мечей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Паж Мечей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Рыцарь Мечей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Королева Мечей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Король Мечей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Туз Пентаклей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Двойка Пентаклей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Тройка Пентаклей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Четверка Пентаклей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Пятерка Пентаклей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Шестёрка Пентаклей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Семерка Пентаклей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Восьмерка Пентаклей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Девятка Пентаклей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Десятка Пентаклей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Паж Пентаклей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Рыцарь Пентаклей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Королева Пентаклей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Король Пентаклей',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Туз Кубков',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Двойка Кубков',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Тройка Кубков',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Четверка Кубков',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Пятерка Кубков',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Шестёрка Кубков',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Семерка Кубков',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Восьмерка Кубков',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Девятка Кубков',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Десятка Кубков',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Паж Кубков',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Рыцарь Кубков',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Королева Кубков',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
             {
                 title: 'Король Кубков',
-                sort: 0
+                sort: 0,
+                reversed: false
             },
         ];
 
         function MurmurHash3(string = null) {
-        if (!string) {
-            string = (new Date).toDateString();
-        }
         let i = 0;
         for (i, hash = 1779033703 ^ string.length; i < string.length; i++) {
             let bitwise_xor_from_character = hash ^ string.charCodeAt(i);
@@ -360,14 +436,20 @@
 
         
         const urlParams = new URLSearchParams(window.location.search);
-        const question = urlParams.get('question');
-        console.log(question)
+        const question = urlParams.get('question') ?? (new Date).toDateString();
+        
+        let id = localStorage.getItem('lsid');
+        if (!id) {
+            id = MurmurHash3('' + Math.random());
+            localStorage.setItem('lsid', id);
+        }
 
-        let generate_seed = MurmurHash3(question);
+        let generate_seed = MurmurHash3(id + question);
         let random_number = Mulberry32(generate_seed());
 
         let hashedCards = cards.map(card => {
             card.sort = random_number();
+            card.reversed = random_number() > 0.7
             return card;
         }).sort((a, b) => a.sort - b.sort);
 
@@ -377,7 +459,7 @@
         const ans = document.getElementById('answer');
         ans.innerHTML = '' +
         '<ul>' +
-        answer.reduce((a, b) => a + '<li>' + b.title + '</li>', '');
+        answer.reduce((a, b) => a + '<li>' + (b.reversed ? 'Перевернутая ' : '') + b.title + '</li>', '');
         '</ul>';
     </script>
 </body>
